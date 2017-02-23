@@ -42,5 +42,43 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="7xx-Xx-wMW">
+            <objects>
+                <viewController id="6yR-LY-1QK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bm-Cx-16h"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Pe-l9-J2r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03b-kv-Fa3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHt-Ix-cCc">
+                                <rect key="frame" x="52" y="90" width="272" height="298.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="250"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group of Homes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-o8-3Yo">
+                                <rect key="frame" x="125" y="438.5" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IHt-Ix-cCc" firstAttribute="top" secondItem="5bm-Cx-16h" secondAttribute="bottom" constant="70" id="7gs-sS-Q4d"/>
+                            <constraint firstItem="Uz2-o8-3Yo" firstAttribute="top" secondItem="IHt-Ix-cCc" secondAttribute="bottom" constant="50" id="Ngb-d2-I0h"/>
+                            <constraint firstItem="Uz2-o8-3Yo" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="fly-bZ-RDw"/>
+                            <constraint firstItem="IHt-Ix-cCc" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="vBS-Df-6Vq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDk-l5-fPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="124"/>
+        </scene>
     </scenes>
 </document>
