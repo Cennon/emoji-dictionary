@@ -13,21 +13,21 @@ class EmojiViewController: UIViewController {
     @IBOutlet var emojiLabel: UILabel!
     
     @IBOutlet var emojiDescription: UILabel!
+    @IBOutlet var emojiCategory: UILabel!
+
+    @IBOutlet var emojiReleaseDate: UILabel!
+    var emoji = Emoji()
     
-    var emoji = "NO EMOJI"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
-        
-        var emojiDescriptionText = ""
-        emojiDescriptionText = emoji.applyingTransform(kCFStringTransformToUnicodeName as StringTransform, reverse: false)!
-        
-        emojiDescription.text = emojiDescriptionText
-        
+        emojiLabel.text = emoji.stringEmoji
+        emojiCategory.text = "Category: \(emoji.category)"
+        emojiReleaseDate.text = "Origination Date: \(emoji.releaseYear)"
+        emojiDescription.text = emoji.definition
         
     }
 
@@ -35,6 +35,6 @@ class EmojiViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
 
 }

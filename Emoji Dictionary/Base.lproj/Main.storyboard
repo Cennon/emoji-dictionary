@@ -68,18 +68,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLX-MX-M9F">
+                                <rect key="frame" x="147.5" y="533.5" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Released" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzK-bs-Qi5">
+                                <rect key="frame" x="133.5" y="584.5" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="IHt-Ix-cCc" firstAttribute="top" secondItem="5bm-Cx-16h" secondAttribute="bottom" constant="70" id="7gs-sS-Q4d"/>
+                            <constraint firstItem="KLX-MX-M9F" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="9oP-PS-xlA"/>
                             <constraint firstItem="Uz2-o8-3Yo" firstAttribute="top" secondItem="IHt-Ix-cCc" secondAttribute="bottom" constant="50" id="Ngb-d2-I0h"/>
+                            <constraint firstItem="dzK-bs-Qi5" firstAttribute="top" secondItem="KLX-MX-M9F" secondAttribute="bottom" constant="30" id="aTW-Ya-1Le"/>
                             <constraint firstItem="Uz2-o8-3Yo" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="fly-bZ-RDw"/>
+                            <constraint firstItem="KLX-MX-M9F" firstAttribute="top" secondItem="Uz2-o8-3Yo" secondAttribute="bottom" constant="30" id="hjd-LJ-KKE"/>
+                            <constraint firstItem="dzK-bs-Qi5" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="nJQ-eR-1Dg"/>
                             <constraint firstItem="IHt-Ix-cCc" firstAttribute="centerX" secondItem="03b-kv-Fa3" secondAttribute="centerX" id="vBS-Df-6Vq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emojiCategory" destination="KLX-MX-M9F" id="W5Q-IR-mp2"/>
                         <outlet property="emojiDescription" destination="Uz2-o8-3Yo" id="Pf0-yP-4X7"/>
                         <outlet property="emojiLabel" destination="IHt-Ix-cCc" id="DZW-Qf-yVC"/>
+                        <outlet property="emojiReleaseDate" destination="dzK-bs-Qi5" id="bii-Rz-Ly8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CDk-l5-fPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
